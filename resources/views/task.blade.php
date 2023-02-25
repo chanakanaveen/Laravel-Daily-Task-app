@@ -30,7 +30,7 @@
                     <input type="text" class="form-control" name="task" placeholder="Enter Your Task Here" >
                 </br>
                         <input type="submit" class="btn btn-primary" value="SAVE" >
-                        <input type="button" class="btn btn-warning" value="CLEAR" >
+                        <a href="/tasks"  class="btn btn-warning">Clear</a>
                 </form>
          </br>
                     <table class="table table-dark">
@@ -59,6 +59,8 @@
                         @endif
 
                         <a href="/deletetask/{{$task->id}}" class="btn btn-warning">Delete</a>
+
+                        <a href="/updatetask/{{$task->id}}" class="btn btn-success">update</a>
 
                     </td>
                 </tr>
